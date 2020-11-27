@@ -1,0 +1,128 @@
+<div class=" content">
+  <div class=" row">
+    <div class=" col-md-8">
+      <div class=" card">
+        <div class=" card-header">
+          <h5 class=" title">AGREGAR ESPECIALISTAS</h5>
+        </div>
+        <div class=" card-body">
+          <form [formGroup]="form" (ngSubmit)="guardarInfo()">
+            <div class=" row">
+              <div class=" col-md-5 pr-md-1">
+                <div class=" form-group">
+                  <label> Clave especialista </label>
+                  <input class=" form-control" disabled="" placeholder="Company" type="text" value="01" />
+                </div>
+              </div>
+
+              <div class=" col-md-7 pl-md-1">
+                <div class=" form-group">
+                  <label for="exampleInputEmail1"> Correo electronico:</label>
+                  <input class=" form-control" formControlName="correoEspecialista" placeholder="maik@email.com" type="email" />
+                </div>
+              </div>
+            </div>
+            <div class=" row">
+              <div class=" col-md-4 pr-md-1">
+                <div class=" form-group">
+                  <label> Nombre </label>
+                  <input class=" form-control" formControlName="nombre" placeholder="Company" type="text" />
+                </div>
+              </div>
+              <div class=" col-md-4 pl-md-1">
+                <div class=" form-group">
+                  <label> Apellido Paterno</label>
+                  <input class=" form-control" placeholder="Last Name" formControlName="apellidoPaterno" type="text" />
+                </div>
+              </div>
+              <div class=" col-md-4 pl-md-1">
+                <div class=" form-group">
+                  <label> Apellido Materno</label>
+                  <input class=" form-control" placeholder="Last Name" formControlName="apellidoMaterno" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class=" row">
+              <div class=" col-md-6">
+                <div class=" form-group">
+                  <label> Numero de telefono: </label>
+                  <input class=" form-control" placeholder="52 9993600954"  formControlName="numeroTelefono" type="text"/>
+                </div>
+              </div>
+
+              <div class=" col-md-6">
+                <div class=" form-group">
+                  <label> Fecha de nacimiento: </label>
+                  <input class=" form-control" placeholder="2000-01-01" formControlName="fechaNacimiento" type="text"/>
+                </div>
+              </div>
+            </div>
+            <div class=" row">
+              <div class=" col-md-6 ">
+                <div class=" form-group">
+                  <label>Consultorio</label>
+                  <input class=" form-control" placeholder="1" formControlName="idConsultorio" type="number" />
+                </div>
+              </div>
+              <div class=" col-md-6 ">
+                <div class=" form-group">
+                  <label>Tipo especialista</label>
+                  <input class=" form-control" placeholder="1" formControlName="idTipoEspecialista" type="number" />
+                </div>
+              </div>
+            </div>
+            <!-- <div class=" row">
+              <div class=" col-md-8">
+                <div class=" form-group">
+                  <label> About Me </label>
+                  <textarea class=" form-control" cols="80" placeholder="Here can be your description" rows="4"
+                    value="Mike"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo. </textarea>
+                </div>
+              </div>
+            </div> -->
+          </form>
+        </div>
+        <div class=" card-footer">
+          <button class=" btn btn-fill btn-danger" type="submit">Guardar</button>
+        </div>
+      </div>
+    </div>
+    <div class=" col-md-4">
+      <div class=" card card-user">
+        <div class=" card-body">
+          <p class=" card-text"></p>
+          <div class=" author">
+            <div class=" block block-one"></div>
+            <div class=" block block-two"></div>
+            <div class=" block block-three"></div>
+            <div class=" block block-four"></div>
+            <a href="javascript:void(0)">
+              <img alt="..." class=" avatar" src="assets/img/emilyz.jpg" />
+
+              <h5 class=" title">Mike Andrew</h5>
+            </a>
+            <p class=" description">Ceo/Co-Founder</p>
+          </div>
+          <div class=" card-description">
+            Do not be scared of the truth because we need to restart the human
+            foundation in truth And I love you like Kanye loves Kanye I love
+            Rick Owens’ bed design but the back is...
+          </div>
+        </div>
+        <div class=" card-footer">
+          <div class=" button-container">
+            <button class=" btn btn-icon btn-round btn-facebook" href="javascript:void(0)">
+              <i class=" fab fa-facebook"> </i>
+            </button>
+            <button class=" btn btn-icon btn-round btn-twitter" href="javascript:void(0)">
+              <i class=" fab fa-twitter"> </i>
+            </button>
+            <button class=" btn btn-icon btn-round btn-google" href="javascript:void(0)">
+              <i class=" fab fa-google-plus"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
