@@ -1,28 +1,12 @@
 import { Component, OnInit } from "@angular/core";
-import { FormGroup, FormBuilder, Validators } from "@angular/forms";
 import Chart from 'chart.js';
 
 @Component({
-  selector: "app-especialistas",
-  templateUrl: "especialistas.component.html"
+  selector: "app-pacientes",
+  templateUrl: "pacientes.component.html"
 })
-export class EspecialistasComponent implements OnInit {
 
-  form: FormGroup;
-  constructor(private formBuilder:FormBuilder) {
-    this.form = this.formBuilder.group({
-      id: 0,
-      nombre:['', [Validators.required]],
-      apellidoPaterno:['', [Validators.required]],
-      apellidoMaterno:['', [Validators.required]],
-      numeroTelefono:['', [Validators.required, Validators.maxLength(10)]],
-      correoEspecialista:['', [Validators.required, Validators.email]],
-      fechaNacimiento:['', [Validators.required], []],
-      idConsultorio:['', [Validators.required]],
-      idTipoEspecialista:['', [Validators.required]]
-    });
-  }
-
+export class PacientesComponent implements OnInit {
   public canvas : any;
   public ctx;
   public datasets: any;
@@ -32,6 +16,7 @@ export class EspecialistasComponent implements OnInit {
   public clicked1: boolean = false;
   public clicked2: boolean = false;
 
+  constructor() {}
 
   ngOnInit() {
     var gradientChartOptionsConfigurationWithTooltipBlue: any = {
@@ -323,8 +308,8 @@ export class EspecialistasComponent implements OnInit {
       }
     };
 
-    // this.canvas = document.getElementById("chartLineRed");
-    // this.ctx = this.canvas.getContext("2d");
+    this.canvas = document.getElementById("chartLineRed");
+    this.ctx = this.canvas.getContext("2d");
 
     var gradientStroke = this.ctx.createLinearGradient(0, 230, 0, 50);
 
@@ -477,10 +462,7 @@ export class EspecialistasComponent implements OnInit {
       },
       options: gradientBarChartConfiguration
     });
-  }
 
-  guardarInfo(){
-    console.log(this.form);
   }
 
   public updateOptions() {

@@ -1,115 +1,105 @@
 <div class=" content">
   <div class=" row">
-    <div class=" col-md-8">
+    <div class=" col-md-12">
       <div class=" card">
         <div class=" card-header">
-          <h5 class=" title">AGREGAR ESPECIALISTAS</h5>
+          <h5 class=" title">GESTIONAR PACIENTES</h5>
         </div>
         <div class=" card-body">
-          <form [formGroup]="form" (ngSubmit)="guardarInfo()">
+          <form>
             <div class=" row">
-              <div class=" col-md-5 pr-md-1">
+              <div class=" col-md-6 pr-md-1">
                 <div class=" form-group">
-                  <label> Clave especialista </label>
-                  <input class=" form-control" disabled="" placeholder="Company" type="text" value="01" />
+                  <label> Clave Pacientes</label>
+                  <input class=" form-control" disabled="" placeholder="Company" type="002" />
+                </div>
+              </div>
+              <div class=" col-md-6 px-md-1">
+                <div class=" form-group">
+                  <label> Nombre Paciente: </label>
+                  <input class=" form-control" placeholder="Nombre Paciente" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class=" row">
+              <div class=" col-md-6 pr-md-1">
+                <div class=" form-group">
+                  <label> Apellito Paterno:</label>
+                  <input class=" form-control" placeholder="Apellito Paterno" type="text" />
                 </div>
               </div>
 
-              <div class=" col-md-7 pl-md-1">
+              <div class=" col-md-6 pl-md-1">
                 <div class=" form-group">
-                  <label for="exampleInputEmail1"> Correo electronico:</label>
-                  <input class=" form-control" formControlName="correoEspecialista" placeholder="maik@email.com" type="email" />
+                  <label> Apellito Materno: </label>
+                  <input class=" form-control" placeholder="Apellito Materno:" type="text" />
+                </div>
+              </div>
+
+            </div>
+
+            <div class=" row">
+              <div class=" col-md-6 pr-md-1">
+                <div class=" form-group">
+                  <label> Peso Paciente:</label>
+                  <input class=" form-control" placeholder="89 kg" type="text" />
+                </div>
+              </div>
+
+              <div class=" col-md-6 pl-md-1">
+                <div class=" form-group">
+                  <label> Estatura: </label>
+                  <input class=" form-control" placeholder="120 cm" type="number" />
                 </div>
               </div>
             </div>
-            <div class=" row">
-              <div class=" col-md-4 pr-md-1">
+
+            <div class="row">
+              <div class=" col-md-6 pr-md-1">
                 <div class=" form-group">
-                  <label> Nombre </label>
-                  <input class=" form-control" formControlName="nombre" placeholder="Company" type="text" />
+                  <label> Edad:</label>
+                  <div class="row container-fluid">
+                    <div class="col-md-6">
+                      <input class=" form-control" placeholder="37" type="number" />
+                    </div>
+
+                    <div class="col-md-6">
+                      <h4> Años</h4>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class=" col-md-4 pl-md-1">
-                <div class=" form-group">
-                  <label> Apellido Paterno</label>
-                  <input class=" form-control" placeholder="Last Name" formControlName="apellidoPaterno" type="text" />
-                </div>
-              </div>
-              <div class=" col-md-4 pl-md-1">
-                <div class=" form-group">
-                  <label> Apellido Materno</label>
-                  <input class=" form-control" placeholder="Last Name" formControlName="apellidoMaterno" type="text" />
-                </div>
-              </div>
-            </div>
-            <div class=" row">
-              <div class=" col-md-6">
+
+              <div class=" col-md-6 pl-md-1">
                 <div class=" form-group">
                   <label> Numero de telefono: </label>
-                  <input class=" form-control" placeholder="52 9993600954"  formControlName="numeroTelefono" type="text"/>
+                  <input class=" form-control" placeholder="52 9993600954" type="tel" />
+                </div>
+              </div>
+            </div>
+
+            <div class=" row">
+              <div class=" col-md-6 pr-md-1">
+                <div class=" form-group">
+                  <label> Correo electronico:</label>
+                  <input class=" form-control" placeholder="maik@gmail.com" type="email" />
                 </div>
               </div>
 
-              <div class=" col-md-6">
+              <div class=" col-md-6 pl-md-1">
                 <div class=" form-group">
-                  <label> Fecha de nacimiento: </label>
-                  <input class=" form-control" placeholder="2000-01-01" formControlName="fechaNacimiento" type="text"/>
+                  <label> Clave consultorio: </label>
+                  <input class=" form-control disabled" placeholder="01" type="number" />
                 </div>
               </div>
             </div>
-            <div class=" row">
-              <div class=" col-md-6 ">
-                <div class=" form-group">
-                  <label>Consultorio</label>
-                  <input class=" form-control" placeholder="1" formControlName="idConsultorio" type="number" />
-                </div>
-              </div>
-              <div class=" col-md-6 ">
-                <div class=" form-group">
-                  <label>Tipo especialista</label>
-                  <input class=" form-control" placeholder="1" formControlName="idTipoEspecialista" type="number" />
-                </div>
-              </div>
-            </div>
-            <!-- <div class=" row">
-              <div class=" col-md-8">
-                <div class=" form-group">
-                  <label> About Me </label>
-                  <textarea class=" form-control" cols="80" placeholder="Here can be your description" rows="4"
-                    value="Mike"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo. </textarea>
-                </div>
-              </div>
-            </div> -->
-            <button class=" btn btn-fill btn-danger" type="submit">Guardar</button>
+
           </form>
         </div>
         <div class=" card-footer">
-          <!-- boton -->
-        </div>
-      </div>
-    </div>
-    <div class=" col-md-4">
-      <div class=" card card-chart">
-        <div class=" card-header">
-          <h5 class=" card-category">Total de CLIENTES</h5>
-          <h3 class=" card-title">
-            <i class=" tim-icons icon-bell-55 text-danger-states"> </i> 763,215
-          </h3>
-        </div>
-        <div class=" card-body">
-          <div class=" chart-area"><canvas id="chartLineRed"> </canvas></div>
-        </div>
-      </div>
+          <button class=" btn btn-fill btn-info" type="submit">ACTUALIZAR</button>
 
-      <div class=" card card-chart">
-        <div class=" card-header">
-          <h5 class=" card-category">TOTAL DE - C I T A S</h5>
-          <h3 class=" card-title">
-            <i class=" tim-icons icon-send text-success"> </i> 3,500
-          </h3>
-        </div>
-        <div class=" card-body">
-          <div class=" chart-area"><canvas id="chartLineGreen"> </canvas></div>
+          <button class=" btn btn-fill btn-danger" type="submit">ELIMINAR</button>
         </div>
       </div>
     </div>
@@ -118,7 +108,7 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header">
-          <h6>Buscar ESPECIALISTAS</h6>
+          <h6>Buscar Pacientes</h6>
           <input class="form-control" type="search" placeholder="Buscar pacientes....">
         </div>
 

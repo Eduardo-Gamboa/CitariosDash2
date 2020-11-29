@@ -12,27 +12,27 @@ export const ROUTES: RouteInfo[] = [
     path: "/especialistas",
     title: "Especialistas",
     rtlTitle: "لوحة القيادة",
-    icon: "icon-chart-pie-36",
+    icon: "icon-badge",
     class: ""
   },
   {
-    path: "/icons",
+    path: "/consultorio",
     title: "Consultorio",
     rtlTitle: "الرموز",
-    icon: "icon-atom",
+    icon: "icon-sound-wave",
     class: ""
   },
   {
-    path: "/maps",
+    path: "/pacientes",
     title: "Mis pacientes",
     rtlTitle: "خرائط",
-    icon: "icon-pin",
+    icon: "icon-single-02",
     class: "" },
   {
     path: "/notifications",
     title: "Citas",
     rtlTitle: "إخطارات",
-    icon: "icon-bell-55",
+    icon: "icon-calendar-60",
     class: ""
   },
 
